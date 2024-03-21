@@ -10,30 +10,9 @@
   <body>
     <nav id="desktop-nav">
       <div class="logo">Le Phuoc Minh Quan</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
     </nav>
     <nav id="hamburger-nav">
       <div class="logo">Le Phuoc Minh Quan</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#" onclick="toggleMenu()">About</a></li>
-          <li><a href="#" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
@@ -54,7 +33,7 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='https://facebook.com/quann.minh.19'">
             Contact Info
           </button>
         </div>
@@ -66,6 +45,27 @@
             onclick="location.href='https://github.com/nhansp/mquan'"
           />
         </div>
+      </div>
+    </section>
+    <section id="slideshow">
+      <div class="slideshow_user"
+          data-cycle-prev=".prv"  
+          data-cycle-next=".nxt">
+        <h1 class="slideshow_username" style="font-size: 3rem;">A3K55 members (demo)</h1>
+        <h2 class="slideshow_userinfo" id="usrin4" style="font-size: 2rem;"></h2>
+        <div class="slideshow_btns">
+          <button class="prv" onclick="plusSlides(-1)">&#10094;</button>
+          <button class="nxt" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+      </div>
+      <div class="slideshow_image">
+        <img src="assets/profile-pic.png">
+      </div>
+      <div class="slideshow_image">
+        <img src="assets/tienhung.png">
+      </div>
+      <div class="slideshow_image">
+        <img src="assets/trinhthang.png">
       </div>
     </section>
     <script src="script.js"></script>

@@ -1,6 +1,15 @@
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+@keyframes fader {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 * {
   margin: 0;
@@ -8,15 +17,16 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman", sans-serif;
   justify-content: center;
   background-size: auto 100%; 
-  background: url('https://cdn.discordapp.com/attachments/1094638149851943025/1208215378564481105/Screenshot_from_2024-02-17_07-52-10.png?ex=65e27941&is=65d00441&hm=36158e92250a0c3a5a9288db6414a4aeed914a4be552f40fb2cc56fb69ef39ca&') center center no-repeat;
+  background: linear-gradient(to right, rgba(90, 90, 90, 0.52), rgba(0, 0, 0, 0.73)), url('assets/bg.png') center center no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 html {
+  animation: fader 1.5s ease;
   scroll-behavior: smooth;
 }
 
@@ -51,7 +61,7 @@ nav {
 }
 
 a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -179,11 +189,14 @@ section {
   display: flex;
   height: 400px;
   width: 400px;
-  margin: auto 0;
+  margin-top: 40px;
+  margin-right: 155px;
   clip-path: circle();
 }
 
 .section__text {
+  margin-top: -244px;
+  margin-left: -88px;
   align-self: center;
   text-align: center;
 }
@@ -220,6 +233,57 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+}
+
+/* slideshow section */
+
+#slideshow {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.slideshow_user {
+  justify-content: center;
+}
+
+.slideshow_username {
+  justify-content: center;
+}
+
+.prv {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nxt {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.slideshow_image {
+  display: none;
+}
+
+.slideshow_image img {
+  width: min(45rem, 90%);
+  object-fit: cover;
 }
 
 /* ICONS */

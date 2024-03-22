@@ -6,8 +6,8 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-  const names = ["Le Phuoc Minh Quan", "Nguyen Tien Hung", "Trinh Thang", "Nguyen Le Phuoc Duy", "Tran Trung Nhan"];
-  const dob = ["16/08/2006", "09/09/2006", "15/12/2006", "15/04/2006", "03/11/2006"];
+  const names = ["Tran Hoang Tien aka David Tien Tran", "Nguyen Tien Hung", "Trinh Thang", "Nguyen Le Phuoc Duy", "Tran Trung Nhan"];
+  const dob = ["31/05/2006", "09/09/2006", "15/12/2006", "15/04/2006", "03/11/2006"];
   let i;
   let slides = document.getElementsByClassName("slideshow_image");
   if (n > slides.length) {slideIndex = 1}

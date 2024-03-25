@@ -284,7 +284,7 @@ section {
 }
 
 .slideshow_user {
-  justify-content: center;
+  float: left;
 }
 
 .slideshow_username {
@@ -321,8 +321,10 @@ section {
 }
 
 .slideshow_image img {
-  width: min(45rem, 90%);
+  width: min(35rem, 90%);
+  border-radius: 5%;
   object-fit: cover;
+  float: right;
 }
 
 /* ICONS */

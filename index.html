@@ -4,186 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Shop Hot Wheels</title>
+    <title>Marcus Rashford</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
         }
         header {
             background-color: #333;
             color: white;
-            padding: 10px 0;
+            padding: 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
         }
         nav {
-            background-color: #4CAF50;
+            background-color: #f4f4f4;
             padding: 10px;
             text-align: center;
+            border-bottom: 1px solid #ddd;
         }
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 16px;
-        }
-        .container {
-            width: 90%;
-            margin: 20px auto;
-            max-width: 1200px;
-        }
-        .product {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .product-item {
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 30%;
-            margin: 20px;
-            padding: 15px;
-            text-align: center;
-            transition: 0.3s;
-        }
-        .product-item:hover {
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-        .product-item img {
-            width: 100%;
-            height: auto;
-        }
-        .product-item h3 {
-            font-size: 20px;
-            margin: 10px 0;
-        }
-        .product-item p {
-            font-size: 14px;
-            color: #666;
-        }
-        .product-item .price {
-            color: #E74C3C;
-            font-weight: bold;
             font-size: 18px;
         }
-        .product-item button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            margin-top: 10px;
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
         footer a {
             color: #4CAF50;
             text-decoration: none;
-            margin: 0 10px;
-        }
-        .cart {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .cart h2 {
-            margin-bottom: 15px;
-        }
-        .cart ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .cart ul li {
-            margin: 10px 0;
-            display: flex;
-            justify-content: space-between;
-        }
-        .cart-total {
-            text-align: right;
-            font-weight: bold;
-            margin-top: 15px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Shop Đồ Chơi Hot Wheels</h1>
+        <h1>Marcus Rashford</h1>
     </header>
 
     <nav>
-        <a href="#home">Trang chủ</a>
-        <a href="#products">Sản phẩm</a>
-        <a href="#cart">Giỏ hàng</a>
-        <a href="#contact">Liên hệ</a>
+        <a href="#summary">Tóm tắt</a>
+        <a href="#career">Sự nghiệp</a>
+        <a href="#achievements">Danh hiệu</a>
+        <a href="#personal-life">Đời sống cá nhân</a>
+        <a href="#charity">Hoạt động từ thiện</a>
     </nav>
 
     <div class="container">
-        <!-- Danh sách sản phẩm -->
-        <section id="products" class="product">
-            <div class="product-item">
-                <img src="https://example.com/hotwheels1.jpg" alt="Hot Wheels Car 1">
-                <h3>Hot Wheels Xe 1</h3>
-                <p>Mô tả ngắn gọn về xe Hot Wheels 1.</p>
-                <p class="price">250,000 VND</p>
-                <button>Thêm vào giỏ hàng</button>
-            </div>
-            <div class="product-item">
-                <img src="https://example.com/hotwheels2.jpg" alt="Hot Wheels Car 2">
-                <h3>Hot Wheels Xe 2</h3>
-                <p>Mô tả ngắn gọn về xe Hot Wheels 2.</p>
-                <p class="price">300,000 VND</p>
-                <button>Thêm vào giỏ hàng</button>
-            </div>
-            <div class="product-item">
-                <img src="https://example.com/hotwheels3.jpg" alt="Hot Wheels Car 3">
-                <h3>Hot Wheels Xe 3</h3>
-                <p>Mô tả ngắn gọn về xe Hot Wheels 3.</p>
-                <p class="price">200,000 VND</p>
-                <button>Thêm vào giỏ hàng</button>
-            </div>
+        <!-- Tóm tắt -->
+        <section id="summary">
+            <h2>Tóm tắt</h2>
+            <img src="https://example.com/marcus_rashford.jpg" alt="Marcus Rashford">
+            <p><strong>Marcus Rashford</strong> (sinh ngày 31 tháng 10 năm 1997) là một cầu thủ bóng đá người Anh, hiện đang thi đấu cho câu lạc bộ Manchester United và đội tuyển bóng đá quốc gia Anh ở vị trí tiền đạo. Rashford nổi tiếng với tốc độ, khả năng dứt điểm và sự linh hoạt trên hàng công. Ngoài sự nghiệp thi đấu, anh còn được biết đến với những hoạt động từ thiện và đấu tranh chống lại nạn đói trẻ em ở Anh.</p>
+
+            <table>
+                <tr>
+                    <th>Thông tin cá nhân</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Họ tên đầy đủ</th>
+                    <td>Marcus Rashford</td>
+                </tr>
+                <tr>
+                    <th>Ngày sinh</th>
+                    <td>31 tháng 10, 1997</td>
+                </tr>
+                <tr>
+                    <th>Nơi sinh</th>
+                    <td>Manchester, Anh</td>
+                </tr>
+                <tr>
+                    <th>Chiều cao</th>
+                    <td>1.87 m</td>
+                </tr>
+                <tr>
+                    <th>Vị trí</th>
+                    <td>Tiền đạo</td>
+                </tr>
+                <tr>
+                    <th>CLB hiện tại</th>
+                    <td>Manchester United</td>
+                </tr>
+                <tr>
+                    <th>Số áo</th>
+                    <td>10</td>
+                </tr>
+            </table>
         </section>
 
-        <!-- Giỏ hàng -->
-        <section id="cart" class="cart">
-            <h2>Giỏ hàng của bạn</h2>
+        <!-- Sự nghiệp -->
+        <section id="career">
+            <h2>Sự nghiệp cầu thủ</h2>
+            <p>Marcus Rashford gia nhập học viện trẻ của Manchester United khi mới 7 tuổi và nhanh chóng thể hiện tiềm năng lớn. Anh có trận ra mắt đội một vào tháng 2 năm 2016 trong trận đấu gặp Midtjylland tại UEFA Europa League, ghi 2 bàn thắng ngay trong trận đầu tiên.</p>
+            <p>Kể từ đó, Rashford trở thành một trong những tiền đạo quan trọng của Manchester United, ghi nhiều bàn thắng quan trọng và giúp đội bóng giành được nhiều danh hiệu. Ở cấp độ đội tuyển quốc gia, anh cũng là một phần quan trọng của đội tuyển Anh và đã tham gia các giải đấu lớn như Euro 2020 và World Cup 2018.</p>
+        </section>
+
+        <!-- Danh hiệu -->
+        <section id="achievements">
+            <h2>Danh hiệu</h2>
             <ul>
-                <li>Hot Wheels Xe 1 <span>250,000 VND</span></li>
-                <li>Hot Wheels Xe 2 <span>300,000 VND</span></li>
+                <li>FA Cup: 2016</li>
+                <li>Europa League: 2017</li>
+                <li>EFL Cup: 2017</li>
+                <li>Siêu cúp Anh: 2016</li>
             </ul>
-            <p class="cart-total">Tổng cộng: 550,000 VND</p>
-            <button>Thanh toán</button>
         </section>
 
-        <!-- Liên hệ -->
-        <section id="contact">
-            <h2>Liên hệ</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>Số điện thoại: +84 123 456 789</p>
-            <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
+        <!-- Đời sống cá nhân -->
+        <section id="personal-life">
+            <h2>Đời sống cá nhân</h2>
+            <p>Marcus Rashford sinh ra và lớn lên tại Wythenshawe, một khu vực ngoại ô của Manchester. Anh được biết đến là một người cầu tiến và kiên trì, luôn nỗ lực để vượt qua những khó khăn trong cuộc sống. Bên ngoài sân cỏ, Rashford còn rất gắn bó với gia đình và luôn đề cao giá trị giáo dục, đặc biệt là đối với những trẻ em có hoàn cảnh khó khăn.</p>
+        </section>
+
+        <!-- Hoạt động từ thiện -->
+        <section id="charity">
+            <h2>Hoạt động từ thiện</h2>
+            <p>Rashford đã trở thành biểu tượng trong chiến dịch chống lại nạn đói ở trẻ em tại Anh. Anh đã gây áp lực để chính phủ Anh cung cấp các bữa ăn miễn phí cho trẻ em có hoàn cảnh khó khăn trong kỳ nghỉ hè. Nhờ những nỗ lực này, Rashford đã được phong tặng Huân chương Đế quốc Anh (MBE) vào năm 2020.</p>
         </section>
     </div>
 
     <footer>
-        <p>Follow us on: 
-            <a href="https://www.facebook.com/">Facebook</a> | 
-            <a href="https://www.instagram.com/">Instagram</a> | 
-            <a href="https://www.youtube.com/">YouTube</a>
+        <p>&copy; 2024 Marcus Rashford Fanpage. All rights reserved.</p>
+        <p>Follow Marcus Rashford on 
+            <a href="https://twitter.com/MarcusRashford">Twitter</a> | 
+            <a href="https://www.instagram.com/marcusrashford/">Instagram</a>
         </p>
-        <p>&copy; 2024 Shop Hot Wheels. All rights reserved.</p>
     </footer>
 
 </body>
